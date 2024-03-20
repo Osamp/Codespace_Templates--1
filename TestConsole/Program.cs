@@ -1,6 +1,10 @@
-﻿using System.Net.Http.Headers;
+﻿
+using System.Collections;
+using System.Net.Http.Headers;
 using TestConsole.Classes;
 using TestConsole.Shape;
+using System.Collections;
+using System.Collections.Generic;
 
 // TestClass x = new TestClass() { square = 3};
 
@@ -62,35 +66,66 @@ using TestConsole.Shape;
 
 //IEnumerable<int> e = new System.Collections.Concurrent.ConcurrentQueue<int>(); //new List<int>(); // new int[5]
 
-foreach(IGeometry x in ig)
-{
+// foreach(IGeometry x in ig)
+// {
 
-}
-interface IGeometry
-{
-    double Area();
-    double Perimeter();
-}
+// }
+// interface IGeometry
+// {
+//     double Area();
+//     double Perimeter();
+// }
 
-public class Square :IGeometry,IPostionable2D
-{
-    public double Size { get; set; } 
+// public class Square :IGeometry,IPostionable2D
+// {
+//     public double Size { get; set; } 
 
-    public double Area()
-    {
-        return Size * Size;
-    }
+//     public double Area()
+//     {
+//         return Size * Size;
+//     }
 
-    public double Perimeter()
-    {
-        return Size * 4;
-    }
-   public class Circle :IGeometry
-   {
-         public double Radius { get; set; }
+//     public double Perimeter()
+//     {
+//         return Size * 4;
+//     }
+//    public class Circle :IGeometry
+//    {
+//          public double Radius { get; set; }
 
-         public int
-   }
+//          public int
+//    }
    
-}
+// }
 
+
+// int x = 5;
+
+// ArrayList l = new ArrayList();
+
+// l.Add(x);
+
+// int y = int.Parse(l[0]?.ToString() ?? "");
+
+// int x = 5;
+
+// List<int> 12 = new List<int>();
+
+// 12.Add(x);
+
+// var y =12[0];
+
+// TestGenerics<int> i = new(4);
+// Console.WriteLine(i.X);
+// Console.WriteLine(i.GetString());
+
+// TestGenerics<String> s = new("Hello");
+// Console.WriteLine(s.X);
+// Console.WriteLine(s.GetString());
+
+Singleton<int> i = new();
+
+Singleton<int> y = new();
+
+var x = i.GetInstance();
+var z = i.GetInstance();
