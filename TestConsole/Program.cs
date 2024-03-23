@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Net.Http.Headers;
 using TestConsole.Classes;
 using TestConsole.Shape;
@@ -123,9 +122,27 @@ using System.Collections.Generic;
 // Console.WriteLine(s.X);
 // Console.WriteLine(s.GetString());
 
-Singleton<int> i = new();
+// Singleton<int> i = new();
 
-Singleton<int> y = new();
+// Singleton<int> y = new();
 
-var x = i.GetInstance();
-var z = i.GetInstance();
+// var x = i.GetInstance();
+// var z = i.GetInstance();
+
+// var rr = new Rec("Name", 15);
+
+// var obj = new { Name = "Name", Age = 15};
+// var obj2 = obj with { Age = 17};
+
+// Console.WriteLine(obj);
+// Console.WriteLine(obj2);
+// Console.WriteLine(rr);
+
+// public record Rec(string Name,int Age)
+// {
+//     string? Nickname { get; set; }
+// }
+
+string text = "Nana Owusu Ansah";
+
+Console.WriteLine($"\u001b[31m{text}\u001b[0m");
